@@ -1,27 +1,29 @@
 /* General Reset and Box Sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Body Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: monospace;
   background-color: #f4f6f8;
-  /* color: #333; */
 }
 
 /* Container for the Table */
 .task-container {
   width: 90%;
-  max-width: 1200px;
-  margin: 2rem auto;
+  max-width: 1400px;
+  margin: 5% auto;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 2rem;
+}
+
+.task-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 2% 0% 3% 0%;
+  padding: 10px;
+  font-weight: bold;
 }
 
 /* Table Styles */
@@ -34,11 +36,11 @@ body {
 .task-table td {
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 15px;
 }
 
 .task-table th {
-  background-color: #007bff;
+  background-color: #565e68;
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
@@ -78,7 +80,15 @@ body {
 /* Title Column */
 .title-cell {
   font-weight: 600;
-  color: #555;
+}
+
+.action-button-1 {
+  margin: 10px;
+  height: 35px;
+  width: 70px;
+  background-color: yellow;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Responsive Design */
@@ -137,13 +147,4 @@ body {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-.button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
 }
