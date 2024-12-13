@@ -1,0 +1,149 @@
+/* General Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f8;
+  /* color: #333; */
+}
+
+/* Container for the Table */
+.task-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Table Styles */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.task-table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status Dropdown */
+.status-dropdown {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.status-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Table Headers */
+.task-table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Title Column */
+.title-cell {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-container {
+    padding: 1rem;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .status-dropdown {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .task-container {
+    padding: 0.5rem;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .status-dropdown {
+    padding: 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
